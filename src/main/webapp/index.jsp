@@ -5,10 +5,9 @@
         <title>首页</title>
     </head>
     <body>
+        <a href="jsp/user/login.jsp">登录</a>or<a href="jsp/user/register.jsp">注册</a>
         <h2>Hello World!</h2>
         <%
-            out.println("JSP页面");
-            out.println("IP地址" + request.getRemoteAddr());
 
         %>
     </body>
