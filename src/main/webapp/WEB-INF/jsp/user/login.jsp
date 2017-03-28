@@ -14,6 +14,7 @@
     <form id="login-submit-form" method="post">
         <input type="text" id="uName" min="6" maxlength="12">
         <input type="password" id="uPassword" min="6">
+        <input type="button" id="login-submit" value="登录">
     </form>
 </body>
 </html>
