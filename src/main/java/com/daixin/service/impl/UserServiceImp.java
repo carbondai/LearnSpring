@@ -1,5 +1,6 @@
 package com.daixin.service.impl;
 
+import com.daixin.mapper.UserMapper;
 import com.daixin.model.User;
 import com.daixin.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daixin.mapper.UserMapper">
+    <resultMap id="BaseResultMap" type="USER">
+        <id column="U_ID" jdbcType="INTEGER" property="uId"/>
+        <result column="U_NAME" jdbcType="VARCHAR" property="uName"/>
+        <result column="U_PASSWORD" jdbcType="VARCHAR" property="uPassword"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        U_ID, U_NAME, U_PASSWORD
+    </sql>
+
+    <insert id="addUser" parameterType="User">
+        INSERT INTO
+          USER(U_ID, U_NAME, U_PASSWORD)
+        VALUES
+          (#{uId}, #{uName}, #{uPassword})
+    </insert>
+</mapper>
