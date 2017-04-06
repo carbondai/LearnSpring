@@ -5,7 +5,7 @@
         <title>首页</title>
     </head>
     <body>
-        <a href="jsp/user/login.jsp">登录</a> <a href="jsp/user/register.jsp">注册</a>
+        <a href="user/loginPage">登录</a> <a href="user/registerPage">注册</a>
         <h2>Hello World!</h2>
         <%
 
