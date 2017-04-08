@@ -29,6 +29,6 @@
         <!--注入SqlSessionFactory-->
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
         <!-- 给出需要扫描的Dao接口-->
-        <property name="basePackage" value="com.daixin.mapper.*"/>
+        <property name="basePackage" value="com.daixin.mapper"/>
     </bean>
 </beans>

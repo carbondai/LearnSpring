@@ -6,5 +6,5 @@ import com.daixin.model.User;
  * Created by daixin on 17-3-28.
  */
 public interface UserMapper {
-    User addUser(User user);
+    int addUser(User user);
 }

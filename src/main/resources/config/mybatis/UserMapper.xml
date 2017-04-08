@@ -13,8 +13,8 @@
 
     <insert id="addUser" parameterType="User">
         INSERT INTO
-          USER(U_ID, U_NAME, U_PASSWORD)
+          USER(U_NAME, U_PASSWORD)
         VALUES
-          (#{uId}, #{uName}, #{uPassword})
+          (#{uName}, #{uPassword})
     </insert>
 </mapper>

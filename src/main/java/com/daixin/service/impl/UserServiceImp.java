@@ -14,7 +14,7 @@ public class UserServiceImp implements UserService{
     @Autowired
     private UserMapper userMapper;
 
-    public User addUser(User user) {
+    public int addUser(User user) {
         return userMapper.addUser(user);
     }
 }

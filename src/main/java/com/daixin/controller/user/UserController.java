@@ -13,20 +13,20 @@ import java.util.List;
  * Created by daixin on 17-3-21.
  */
 @Controller
-@RequestMapping(value = "/user/")
+//@RequestMapping(value = "")
 public class UserController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping(value = "register", method = {RequestMethod.POST, RequestMethod.GET})
+    @RequestMapping(value = "/user/register", method = {RequestMethod.POST, RequestMethod.GET})
     public void register(User user){
         userService.addUser(user);
     }
-    @RequestMapping(value = "registerPage", method = {RequestMethod.POST, RequestMethod.GET})
+    @RequestMapping(value = "/user/registerPage", method = {RequestMethod.POST, RequestMethod.GET})
     public String registerPage(){
         return "/user/register";
     }
-    @RequestMapping(value = "loginPage", method = {RequestMethod.POST, RequestMethod.GET})
+    @RequestMapping(value = "/user/loginPage", method = {RequestMethod.POST, RequestMethod.GET})
     public String loginPage(){
         return "/user/login";
     }
